@@ -1,6 +1,6 @@
 # Intercom Invites
 
-![Intercom Invites](https://github.com/danfar93/Intercom-Project/blob/master/Intercom-Invites.png)
+![Intercom Invites](https://github.com/danielfarrell-transact/Intercom-Invites/blob/main/Intercom-Invites.png)
 
 - Clone this repository or download the project zip
 - Open the XCode project
