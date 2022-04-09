@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32D1D4FC27FE1ED400D7508B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D1D4FB27FE1ED400D7508B /* AppDelegate.swift */; };
+		32D1D4FE27FE1ED400D7508B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D1D4FD27FE1ED400D7508B /* SceneDelegate.swift */; };
+		32D1D50027FE1ED400D7508B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D1D4FF27FE1ED400D7508B /* HomeViewController.swift */; };
+		32D1D50527FE1ED500D7508B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32D1D50427FE1ED500D7508B /* Assets.xcassets */; };
+		32D1D50827FE1ED500D7508B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32D1D50627FE1ED500D7508B /* LaunchScreen.storyboard */; };
+		32D1D51027FE1EF000D7508B /* customers.txt in Resources */ = {isa = PBXBuildFile; fileRef = 32D1D50F27FE1EF000D7508B /* customers.txt */; };
+		32D1D51227FE231900D7508B /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D1D51127FE231900D7508B /* Customer.swift */; };
+		32D1D51627FE238600D7508B /* HaversineFormula.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D1D51527FE238600D7508B /* HaversineFormula.swift */; };
+		32D1D51927FE240600D7508B /* DistanceValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D1D51827FE240600D7508B /* DistanceValidator.swift */; };
+		32D1D51B27FE250800D7508B /* DegreesConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D1D51A27FE250800D7508B /* DegreesConverter.swift */; };
+		32D1D52E27FEC96600D7508B /* InvitedCustomerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D1D52D27FEC96600D7508B /* InvitedCustomerCell.swift */; };
+		32D1D53127FECA1100D7508B /* InviteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D1D53027FECA1100D7508B /* InviteListViewController.swift */; };
+		32D1D53427FECAC200D7508B /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D1D53327FECAC200D7508B /* UIView+Ext.swift */; };
+		32D1D53627FECFC300D7508B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D1D53527FECFC300D7508B /* Constants.swift */; };
+		32D1D53F28017D7800D7508B /* VisbyRoundCF-DemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 32D1D53A28017D7700D7508B /* VisbyRoundCF-DemiBold.otf */; };
+		32D1D54028017D7800D7508B /* VisbyRoundCF-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 32D1D53B28017D7700D7508B /* VisbyRoundCF-Medium.otf */; };
+		32D1D54128017D7800D7508B /* VisbyRoundCF-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 32D1D53C28017D7700D7508B /* VisbyRoundCF-Bold.otf */; };
+		32D1D54228017D7800D7508B /* VisbyRoundCF-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 32D1D53D28017D7800D7508B /* VisbyRoundCF-ExtraBold.otf */; };
+		32D1D54328017D7800D7508B /* VisbyRoundCF-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 32D1D53E28017D7800D7508B /* VisbyRoundCF-Light.otf */; };
+		32D1D54C28018D9F00D7508B /* Intercom_Invites_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D1D54B28018D9F00D7508B /* Intercom_Invites_Tests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		32D1D54D28018D9F00D7508B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32D1D4F027FE1ED400D7508B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32D1D4F727FE1ED400D7508B;
+			remoteInfo = "Intercom-Invites";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		32D1D4F827FE1ED400D7508B /* Intercom-Invites.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Intercom-Invites.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32D1D4FB27FE1ED400D7508B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		32D1D4FD27FE1ED400D7508B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		32D1D4FF27FE1ED400D7508B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		32D1D50427FE1ED500D7508B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		32D1D50727FE1ED500D7508B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		32D1D50927FE1ED500D7508B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32D1D50F27FE1EF000D7508B /* customers.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = customers.txt; sourceTree = "<group>"; };
+		32D1D51127FE231900D7508B /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		32D1D51527FE238600D7508B /* HaversineFormula.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaversineFormula.swift; sourceTree = "<group>"; };
+		32D1D51827FE240600D7508B /* DistanceValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceValidator.swift; sourceTree = "<group>"; };
+		32D1D51A27FE250800D7508B /* DegreesConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DegreesConverter.swift; sourceTree = "<group>"; };
+		32D1D52D27FEC96600D7508B /* InvitedCustomerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitedCustomerCell.swift; sourceTree = "<group>"; };
+		32D1D53027FECA1100D7508B /* InviteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteListViewController.swift; sourceTree = "<group>"; };
+		32D1D53327FECAC200D7508B /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		32D1D53527FECFC300D7508B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		32D1D53A28017D7700D7508B /* VisbyRoundCF-DemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VisbyRoundCF-DemiBold.otf"; sourceTree = "<group>"; };
+		32D1D53B28017D7700D7508B /* VisbyRoundCF-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VisbyRoundCF-Medium.otf"; sourceTree = "<group>"; };
+		32D1D53C28017D7700D7508B /* VisbyRoundCF-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VisbyRoundCF-Bold.otf"; sourceTree = "<group>"; };
+		32D1D53D28017D7800D7508B /* VisbyRoundCF-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VisbyRoundCF-ExtraBold.otf"; sourceTree = "<group>"; };
+		32D1D53E28017D7800D7508B /* VisbyRoundCF-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VisbyRoundCF-Light.otf"; sourceTree = "<group>"; };
+		32D1D54928018D9F00D7508B /* Intercom-Invites-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Intercom-Invites-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32D1D54B28018D9F00D7508B /* Intercom_Invites_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intercom_Invites_Tests.swift; sourceTree = "<group>"; };
+		32D1D55328018E1400D7508B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32D1D4F527FE1ED400D7508B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32D1D54628018D9F00D7508B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32D1D4EF27FE1ED400D7508B = {
+			isa = PBXGroup;
+			children = (
+				32D1D4FA27FE1ED400D7508B /* Intercom-Invites */,
+				32D1D54A28018D9F00D7508B /* Intercom-Invites-Tests */,
+				32D1D4F927FE1ED400D7508B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		32D1D4F927FE1ED400D7508B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32D1D4F827FE1ED400D7508B /* Intercom-Invites.app */,
+				32D1D54928018D9F00D7508B /* Intercom-Invites-Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32D1D4FA27FE1ED400D7508B /* Intercom-Invites */ = {
+			isa = PBXGroup;
+			children = (
+				32D1D50F27FE1EF000D7508B /* customers.txt */,
+				32D1D4FB27FE1ED400D7508B /* AppDelegate.swift */,
+				32D1D4FD27FE1ED400D7508B /* SceneDelegate.swift */,
+				32D1D52F27FEC9D200D7508B /* ViewControllers */,
+				32D1D51727FE23B600D7508B /* Support */,
+				32D1D53227FECAA700D7508B /* Extensions */,
+				32D1D52C27FEC93100D7508B /* CustomCells */,
+				32D1D51327FE235900D7508B /* Models */,
+				32D1D50427FE1ED500D7508B /* Assets.xcassets */,
+				32D1D50627FE1ED500D7508B /* LaunchScreen.storyboard */,
+				32D1D50927FE1ED500D7508B /* Info.plist */,
+			);
+			path = "Intercom-Invites";
+			sourceTree = "<group>";
+		};
+		32D1D51327FE235900D7508B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				32D1D51127FE231900D7508B /* Customer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		32D1D51727FE23B600D7508B /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				32D1D53527FECFC300D7508B /* Constants.swift */,
+				32D1D51827FE240600D7508B /* DistanceValidator.swift */,
+				32D1D51527FE238600D7508B /* HaversineFormula.swift */,
+				32D1D51A27FE250800D7508B /* DegreesConverter.swift */,
+				32D1D53928017D4000D7508B /* Fonts */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		32D1D52C27FEC93100D7508B /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				32D1D52D27FEC96600D7508B /* InvitedCustomerCell.swift */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		32D1D52F27FEC9D200D7508B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				32D1D4FF27FE1ED400D7508B /* HomeViewController.swift */,
+				32D1D53027FECA1100D7508B /* InviteListViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		32D1D53227FECAA700D7508B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				32D1D53327FECAC200D7508B /* UIView+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		32D1D53928017D4000D7508B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				32D1D53C28017D7700D7508B /* VisbyRoundCF-Bold.otf */,
+				32D1D53A28017D7700D7508B /* VisbyRoundCF-DemiBold.otf */,
+				32D1D53D28017D7800D7508B /* VisbyRoundCF-ExtraBold.otf */,
+				32D1D53E28017D7800D7508B /* VisbyRoundCF-Light.otf */,
+				32D1D53B28017D7700D7508B /* VisbyRoundCF-Medium.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		32D1D54A28018D9F00D7508B /* Intercom-Invites-Tests */ = {
+			isa = PBXGroup;
+			children = (
+				32D1D54B28018D9F00D7508B /* Intercom_Invites_Tests.swift */,
+				32D1D55328018E1400D7508B /* Info.plist */,
+			);
+			path = "Intercom-Invites-Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32D1D4F727FE1ED400D7508B /* Intercom-Invites */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32D1D50C27FE1ED500D7508B /* Build configuration list for PBXNativeTarget "Intercom-Invites" */;
+			buildPhases = (
+				32D1D4F427FE1ED400D7508B /* Sources */,
+				32D1D4F527FE1ED400D7508B /* Frameworks */,
+				32D1D4F627FE1ED400D7508B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Intercom-Invites";
+			productName = "Intercom-Invites";
+			productReference = 32D1D4F827FE1ED400D7508B /* Intercom-Invites.app */;
+			productType = "com.apple.product-type.application";
+		};
+		32D1D54828018D9F00D7508B /* Intercom-Invites-Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32D1D54F28018D9F00D7508B /* Build configuration list for PBXNativeTarget "Intercom-Invites-Tests" */;
+			buildPhases = (
+				32D1D54528018D9F00D7508B /* Sources */,
+				32D1D54628018D9F00D7508B /* Frameworks */,
+				32D1D54728018D9F00D7508B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32D1D54E28018D9F00D7508B /* PBXTargetDependency */,
+			);
+			name = "Intercom-Invites-Tests";
+			productName = "Intercom-Invites-Tests";
+			productReference = 32D1D54928018D9F00D7508B /* Intercom-Invites-Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32D1D4F027FE1ED400D7508B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					32D1D4F727FE1ED400D7508B = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					32D1D54828018D9F00D7508B = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 32D1D4F727FE1ED400D7508B;
+					};
+				};
+			};
+			buildConfigurationList = 32D1D4F327FE1ED400D7508B /* Build configuration list for PBXProject "Intercom-Invites" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 32D1D4EF27FE1ED400D7508B;
+			productRefGroup = 32D1D4F927FE1ED400D7508B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32D1D4F727FE1ED400D7508B /* Intercom-Invites */,
+				32D1D54828018D9F00D7508B /* Intercom-Invites-Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32D1D4F627FE1ED400D7508B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32D1D54328017D7800D7508B /* VisbyRoundCF-Light.otf in Resources */,
+				32D1D54028017D7800D7508B /* VisbyRoundCF-Medium.otf in Resources */,
+				32D1D51027FE1EF000D7508B /* customers.txt in Resources */,
+				32D1D50827FE1ED500D7508B /* LaunchScreen.storyboard in Resources */,
+				32D1D50527FE1ED500D7508B /* Assets.xcassets in Resources */,
+				32D1D54228017D7800D7508B /* VisbyRoundCF-ExtraBold.otf in Resources */,
+				32D1D54128017D7800D7508B /* VisbyRoundCF-Bold.otf in Resources */,
+				32D1D53F28017D7800D7508B /* VisbyRoundCF-DemiBold.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32D1D54728018D9F00D7508B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32D1D4F427FE1ED400D7508B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32D1D51927FE240600D7508B /* DistanceValidator.swift in Sources */,
+				32D1D53427FECAC200D7508B /* UIView+Ext.swift in Sources */,
+				32D1D51B27FE250800D7508B /* DegreesConverter.swift in Sources */,
+				32D1D52E27FEC96600D7508B /* InvitedCustomerCell.swift in Sources */,
+				32D1D51627FE238600D7508B /* HaversineFormula.swift in Sources */,
+				32D1D53127FECA1100D7508B /* InviteListViewController.swift in Sources */,
+				32D1D50027FE1ED400D7508B /* HomeViewController.swift in Sources */,
+				32D1D4FC27FE1ED400D7508B /* AppDelegate.swift in Sources */,
+				32D1D4FE27FE1ED400D7508B /* SceneDelegate.swift in Sources */,
+				32D1D51227FE231900D7508B /* Customer.swift in Sources */,
+				32D1D53627FECFC300D7508B /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32D1D54528018D9F00D7508B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32D1D54C28018D9F00D7508B /* Intercom_Invites_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		32D1D54E28018D9F00D7508B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32D1D4F727FE1ED400D7508B /* Intercom-Invites */;
+			targetProxy = 32D1D54D28018D9F00D7508B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		32D1D50627FE1ED500D7508B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32D1D50727FE1ED500D7508B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		32D1D50A27FE1ED500D7508B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		32D1D50B27FE1ED500D7508B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32D1D50D27FE1ED500D7508B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JCK38J4JLR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Intercom-Invites/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.danfar.Intercom-Invites";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		32D1D50E27FE1ED500D7508B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JCK38J4JLR;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Intercom-Invites/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.danfar.Intercom-Invites";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		32D1D55028018D9F00D7508B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JCK38J4JLR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.danfar.Intercom-Invites-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Intercom-Invites.app/Intercom-Invites";
+			};
+			name = Debug;
+		};
+		32D1D55128018D9F00D7508B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JCK38J4JLR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.danfar.Intercom-Invites-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Intercom-Invites.app/Intercom-Invites";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32D1D4F327FE1ED400D7508B /* Build configuration list for PBXProject "Intercom-Invites" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32D1D50A27FE1ED500D7508B /* Debug */,
+				32D1D50B27FE1ED500D7508B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32D1D50C27FE1ED500D7508B /* Build configuration list for PBXNativeTarget "Intercom-Invites" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32D1D50D27FE1ED500D7508B /* Debug */,
+				32D1D50E27FE1ED500D7508B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32D1D54F28018D9F00D7508B /* Build configuration list for PBXNativeTarget "Intercom-Invites-Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32D1D55028018D9F00D7508B /* Debug */,
+				32D1D55128018D9F00D7508B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 32D1D4F027FE1ED400D7508B /* Project object */;
+}
