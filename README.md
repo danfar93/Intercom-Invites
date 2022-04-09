@@ -2,6 +2,8 @@
 
 ![Intercom Invites](https://github.com/danielfarrell-transact/Intercom-Invites/blob/main/Intercom-Invites.png)
 
+## How to Run Unit Tests:
+
 - Clone this repository or download the project zip
 - Open the XCode project
 - Install on Simulator or iPhone
